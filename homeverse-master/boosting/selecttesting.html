@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecttesting</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            /* display: none; */
+        }
+        .box1{
+            background-color: red;
+            display: none;
+        }
+        .box2{
+            background-color: blue;
+            display: none;
+        }
+        .box3{
+            background-color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="one">One</button>
+    <button id="two">Two</button>
+    <button id="three">Three</button>
+    <!-- <select name="select" id="sel">
+        <option value="select">select an option</option>
+        <option value="one" id="one">one</option>
+        <option value="two" id="two">two</option>
+        <option value="three" id="three">three</option>
+    </select> -->
+    <div class="box box1" id="onebox"></div>
+    <div class="box box2" id="twobox"></div>
+    <div class="box box3" id="threebox"></div>
+    <script>
+        let onebtn = document.getElementById("one").onclick = function () {
+                document.querySelector('#onebox').style.display = "flex";
+                document.querySelector('#twobox').style.display = "none";
+                document.querySelector('#threebox').style.display = "none";
+        }
+        let twobtn = document.getElementById("two").onclick = function () {
+                document.querySelector('#onebox').style.display = "none";
+                document.querySelector('#twobox').style.display = "flex";
+                document.querySelector('#threebox').style.display = "none";
+        }
+        let threebtn = document.getElementById("three").onclick = function () {
+                document.querySelector('#onebox').style.display = "none";
+                document.querySelector('#twobox').style.display = "none";
+                document.querySelector('#threebox').style.display = "flex";
+        }
+            let selectValue = document.getElementById("option").onclick = function() {
+                if(selectValue === "one"){
+                document.querySelector('.box1').style.display = "flex";
+                document.querySelector('.box2').style.display = "none";
+                document.querySelector('.box3').style.display = "none";
+            } else if(selectValue === "two"){
+                document.querySelector('.box1').style.display = "none";
+                document.querySelector('.box2').style.display = "flex";
+                document.querySelector('.box3').style.display = "none";
+            } else if(selectValue === "three"){
+                document.querySelector('.box1').style.display = "none";
+                document.querySelector('.box2').style.display = "none";
+                document.querySelector('.box3').style.display = "flex";
+            } else {
+                document.querySelector('.box1').style.backgroundColor = "none";
+                document.querySelector('.box2').style.backgroundColor = "none";
+                document.querySelector('.box3').style.backgroundColor = "none";
+            }
+            }
+
+    </script>
+</body>
+</html>

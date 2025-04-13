@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  font-family: "Poppins", sans-serif;
+}
+body{
+  width: 100%;
+}
+
+.containers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+  overflow: scroll;
+  width: 100%;
+}
+
+.containers .heading {
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.containers .heading h3{
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
+  font-weight: bolder;
+  border-bottom: 3px solid #222;
+  padding-bottom: 10px;
+}
+.containers .heading h3 p {
+  font-weight: 100;
+  display: inline-block;
+}
+
+.containers .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+video{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.vid{
+  width: 300px;
+  height: 300px;
+}
+.containers .box .glam{
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: 
+  'six two seven'
+  'one ten three'
+  'eleven four thirteen'
+  'five nine eight'
+  'fourteen twelve fifteen';
+
+}
+@media screen and (min-width: 33em) {
+  .containers .box .glam {
+      grid-template-areas:
+      'six two'
+      'seven one'
+      'ten three'
+      'eleven four'
+      'thirteen five'
+      'nine eight'
+      'fourteen twelve'
+      'fifteen fifteen'
+      ;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .containers .box .glam{
+    grid-template-areas:
+     'one two '
+     'three four '
+     'five six '
+     'seven eight '
+     'nine ten'
+     'eleven twelve'
+     'thirteen fourteen'
+     'fifteen';
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .containers .box .glam{
+    grid-template-areas: 
+    'six two seven'
+    'one ten three'
+    'eleven four thirteen'
+    'five nine eight'
+    'fourteen twelve fifteen';
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  *{
+    overflow-x: hidden;
+  }
+  .containers .box .glam{
+    grid-template-areas:
+    "six six"
+    'two two'
+    'seven seven'
+    'one one'
+    'ten ten'
+    'three three'
+    'eleven eleven'
+    'four four'
+    'thirteen thirteen'
+    'five five'
+    'nine nine'
+    'eight eight'
+    'fourteen fourteen'
+    'twelve twelve'
+    'fifteen fifteen'
+    ;
+  }
+}
+.one{
+  grid-area: one;
+}
+.two{
+  grid-area: two;
+}
+.three{
+  grid-area: three;
+}
+.four{
+  grid-area:four ;
+}
+.five{
+  grid-area:five ;
+}
+.six{
+  grid-area: six;
+}
+.seven{
+  grid-area: seven;
+}
+.eight{
+  grid-area: eight;
+}
+.nine{
+  grid-area: nine;
+}
+.ten{
+  grid-area: ten;
+}
+.eleven{
+  grid-area: eleven;
+}
+.twelve{
+  grid-area: twelve;
+}
+.thirteen{
+  grid-area: thirteen;
+}
+.fourteen{
+  grid-area: fourteen;
+}
+.fifteen{
+  grid-area: fifteen;
+} 
