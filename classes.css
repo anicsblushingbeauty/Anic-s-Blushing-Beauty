@@ -86,11 +86,10 @@ input[type = "date"] {
 }
 textarea{
     width: 100%;
-    padding: 10px;
+    padding: 8px;
     height: 100px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     resize: none;
     cursor: text;
