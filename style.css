@@ -81,7 +81,10 @@
 
 }
 
-
+.logo:visited{
+  color: var(--orange-soda)
+}
+  
 
 
 
