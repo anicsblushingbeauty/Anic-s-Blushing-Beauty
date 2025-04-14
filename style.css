@@ -80,7 +80,9 @@
   --shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
 
 }
-
+.logo{
+  color: var(--orange-soda);
+  }
 .logo:visited{
   color: var(--orange-soda);
 }
