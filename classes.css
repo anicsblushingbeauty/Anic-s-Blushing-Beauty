@@ -62,6 +62,7 @@ select{
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
+    color:black;
     /* appearance: none; */
 }
 option{
