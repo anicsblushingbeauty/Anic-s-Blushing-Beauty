@@ -108,7 +108,7 @@ video{
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
 
   *{
     overflow-x: hidden;
